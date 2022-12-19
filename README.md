@@ -1,16 +1,16 @@
-# くお〜!!Unused CSS selector〜!!ここでonwarn全開、インド人を=>に！
+# くお〜!!Unused CSS selector〜!!ここで onwarn 全開、インド人を=>に！
 
-この記事は[SvelteKitのカレンダー | Advent Calendar 2022 - Qiita](https://qiita.com/advent-calendar/2022/sveltekit)の20日目となる投稿です。
+この記事は[SvelteKit のカレンダー | Advent Calendar 2022 - Qiita](https://qiita.com/advent-calendar/2022/sveltekit)の 20 日目となる投稿です。
 
 movie
 
 ## 概要
 
-SvelteKitは、使用されていないCSSを実行時に表示してくれる便利な機能が備わっています。
+SvelteKit は、使用されていない CSS を実行時に表示してくれる便利な機能が備わっています。
 
 ![使用されていないCSSの例]()
 
-使用されていないCSS
+使用されていない CSS
 
 ![通知されたメッセージの例]()
 
@@ -22,20 +22,19 @@ SvelteKitは、使用されていないCSSを実行時に表示してくれる�
 
 結論からまず述べると、歪んでいたのは社会ではなく、自分自身の認知だったのです。なんということでしょう。
 
-使用されていないCSSを教えてくれるとても便利なこの機能ですが、あえて使用しないCSSを残しておきたいこともあるでしょう。
-１つや２つの通知であれば、生体ignoreで無視することもできなくはないかとおもいます。
-しかし、Svelteのために作られたものではない、外部ライブラリなどではそうはいきません。
+使用されていない CSS を教えてくれるとても便利なこの機能ですが、あえて使用しない CSS を残しておきたいこともあるでしょう。
+１つや２つの通知であれば、生体 ignore で無視することもできなくはないかとおもいます。
+しかし、Svelte のために作られたものではない、外部ライブラリなどではそうはいきません。
 
-ここでは、TailwindCSSのプラグイン、DaisyUIを使って、@applyでクラスを呼び出した場合の例を示してみましょう。
+ここでは、TailwindCSS のプラグイン、DaisyUI を使って、@apply でクラスを呼び出した場合の例を示してみましょう。
 
 Movie
 
 **「くお〜!!Unused CSS selector〜!!」**
 
-
 ## インド人を=>に！ とは
 
-残念ながら、現在ではこのUnused CSS selectorの通知をいい感じに制御する方法は用意されていないようです。容易ではないのかも。<br>※筆者が知らないだけの可能性も高いです。
+残念ながら、現在ではこの Unused CSS selector の通知をいい感じに制御する方法は用意されていないようです。容易ではないのかも。<br>※筆者が知らないだけの可能性も高いです。
 
 ということで、インド人を=>にします。
 
@@ -45,15 +44,15 @@ Movie
 
 ```
 
-このサンプルコードは、rollup.config.js向けの内容のものをsvelte.config.jsに書いてみたのですが、よくわからないけど動いたので良かったです。<br>
-onwarnでhandlerとwarningを受け取ってなんやかんやします。<br>
-あと、もうなんか疲れていたのでwarningの持つcodeがcss-unused-selectorの通知を、全てreturnしているのでSvelteKitとの仲が疑われます。
+このサンプルコードは、rollup.config.js 向けの内容のものを svelte.config.js に書いてみたのですが、よくわからないけど動いたので良かったです。<br>
+onwarn で handler と warning を受け取ってなんやかんやします。<br>
+あと、もうなんか疲れていたので warning の持つ code が css-unused-selector の通知を、全て return しているので SvelteKit との仲が疑われます。
 
-SvelteKitとはこれからも仲良くしていきたいので、warningの中を確認して、frameとかの語句から、通知無視が自明なものをピンポイントで設定しても良いでしょう。
+SvelteKit とはこれからも仲良くしていきたいので、warning の中を確認して、frame とかの語句から、通知無視が自明なものをピンポイントで設定しても良いでしょう。
 
 ![warningを出力した様子]()
 
-warningをご覧ください
+warning をご覧ください
 
 ![個別に指定されたonwarn]()
 
@@ -69,7 +68,7 @@ warningをご覧ください
 
 もっと賢い解決方法が世間に周知される未来を夢見て。 【完】
 
-**※注：例示したDaisyUIに関しては、@applyで呼ばなければそもそも問題ないかも。**
+**※注：例示した DaisyUI に関しては、@apply で呼ばなければそもそも問題ないかも。**
 
 ### 参考文献
 
@@ -77,5 +76,5 @@ warningをご覧ください
 
 ## Next
 
-明日のSvelteKit Advent Calendar 2022は...<br>
-[SvelteKitのカレンダー | Advent Calendar 2022 - Qiita](https://qiita.com/advent-calendar/2022/sveltekit)
+明日の SvelteKit Advent Calendar 2022 は...<br>
+[SvelteKit のカレンダー | Advent Calendar 2022 - Qiita](https://qiita.com/advent-calendar/2022/sveltekit)

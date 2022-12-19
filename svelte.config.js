@@ -9,6 +9,16 @@ const config = {
 
 	kit: {
 		adapter: adapter()
+	},
+	// ここでonwarn全開
+	onwarn: (warning, handler) => {
+		const { code } = warning;
+
+		if (code === 'css-unused-selector') {
+			return;
+		}
+
+		handler(warning);
 	}
 };
 
