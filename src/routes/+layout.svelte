@@ -32,9 +32,11 @@
 		}
 
 		/* このクラスはどこにも使われていない */
+		/*
 		.yay-im-unused {
 			display: none;
 		}
+    */
 	}
 
 	main {

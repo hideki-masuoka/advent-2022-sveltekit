@@ -12,10 +12,13 @@ const config = {
 	},
 	// ここでonwarn全開
 	onwarn: (warning, handler) => {
-		const { code } = warning;
+		const { code, frame } = warning;
 
 		if (code === 'css-unused-selector') {
-			return;
+			if (frame.includes('.no-im-used')) {
+				return;
+			}
+			console.log(warning);
 		}
 
 		handler(warning);

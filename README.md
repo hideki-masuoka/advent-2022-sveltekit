@@ -41,7 +41,31 @@ Movie
 **サンプルコード svelte.config.js**
 
 ```javascript
+import adapter from '@sveltejs/adapter-auto';
+import { vitePreprocess } from '@sveltejs/kit/vite';
 
+/** @type {import('@sveltejs/kit').Config} */
+const config = {
+	// Consult https://kit.svelte.dev/docs/integrations#preprocessors
+	// for more information about preprocessors
+	preprocess: vitePreprocess(),
+
+	kit: {
+		adapter: adapter()
+	},
+	// ここでonwarn全開
+	onwarn: (warning, handler) => {
+		const { code } = warning;
+
+		if (code === 'css-unused-selector') {
+			return;
+		}
+
+		handler(warning);
+	}
+};
+
+export default config;
 ```
 
 このサンプルコードは、rollup.config.js 向けの内容のものを svelte.config.js に書いてみたのですが、よくわからないけど動いたので良かったです。<br>
