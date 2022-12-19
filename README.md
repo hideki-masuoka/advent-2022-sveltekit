@@ -2,17 +2,17 @@
 
 この記事は[SvelteKit のカレンダー | Advent Calendar 2022 - Qiita](https://qiita.com/advent-calendar/2022/sveltekit)の 20 日目となる投稿です。
 
-![これがUnused CSS selectorだ](fig-00-eyecatch.png)
+![これがUnused CSS selectorだ](https://raw.githubusercontent.com/hideki-masuoka/advent-2022-sveltekit/main/static/fig-00-eyecatch.png)
 
 ## 概要
 
 SvelteKit は、使用されていない CSS を実行時に表示してくれる便利な機能が備わっています。
 
-![使用されていないCSSの例](fig-01-yay-im-unused.png)
+![使用されていないCSSの例](https://raw.githubusercontent.com/hideki-masuoka/advent-2022-sveltekit/main/static/fig-01-yay-im-unused.png)
 
 使用されていない CSS
 
-![通知されたメッセージの例](fig-02-yay-im-unused-log.png)
+![通知されたメッセージの例](https://raw.githubusercontent.com/hideki-masuoka/advent-2022-sveltekit/main/static/fig-02-yay-im-unused-log.png)
 
 実行時に通知されたメッセージ
 
@@ -28,7 +28,7 @@ SvelteKit は、使用されていない CSS を実行時に表示してくれ�
 
 ここでは、TailwindCSS のプラグイン、DaisyUI を使って、@apply でクラスを呼び出した場合の例を示してみましょう。
 
-![くお〜！](unused-no-im-used.webp)
+![くお〜！](https://raw.githubusercontent.com/hideki-masuoka/advent-2022-sveltekit/main/static/unused-no-im-used.webp)
 
 **「くお〜!!Unused CSS selector〜!!」**
 
@@ -74,17 +74,17 @@ onwarn で handler と warning を受け取ってなんやかんやします。<
 
 SvelteKit とはこれからも仲良くしていきたいので、warning の中を確認して、frame とかの語句から、通知無視が自明なものをピンポイントで設定しても良いでしょう。
 
-![warningを出力した様子](fig-03-put-warning.png)
+![warningを出力した様子](https://raw.githubusercontent.com/hideki-masuoka/advent-2022-sveltekit/main/static/fig-03-put-warning.png)
 
-warning をご覧ください
+▲ warning をご覧ください
 
-![個別に指定されたonwarn](fig-04-frame-includes.png)
+![個別に指定されたonwarn](https://raw.githubusercontent.com/hideki-masuoka/advent-2022-sveltekit/main/static/fig-04-frame-includes.png)
 
-個別に指定してみました
+▲ 個別に指定してみました
 
-![通知が制御された様子](fig-05-compile-done.png)
+![通知が制御された様子](https://raw.githubusercontent.com/hideki-masuoka/advent-2022-sveltekit/main/static/fig-05-compile-done.png)
 
-やったぜ！！
+▲ やったぜ！！
 
 ## まとめ
 
