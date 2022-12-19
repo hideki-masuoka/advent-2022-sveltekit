@@ -30,6 +30,11 @@
 		.yes-im-used {
 			@apply text-4xl;
 		}
+
+    /* このクラスはどこにも使われていない */
+    .yay-im-unused {
+       display: none;
+    }
 	}
 
 	main {
